@@ -1,5 +1,9 @@
 @import './styles/base.scss';
 
+:root {
+  --primary-color: red;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 5vmin;
@@ -29,6 +33,7 @@ ul {
   border-radius: 50%;
   background: radial-gradient(circle at bottom right, #fb2324, #fe932a);
   animation: slide-right 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  background: var(--primary-color);
 }
 
 @keyframes slide-right {
